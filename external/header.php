@@ -125,7 +125,7 @@ register_shutdown_function(
                         if(!empty($val['a']['sql'])){
                             $data['sql'][] = [
                                 'time' => $_time_tmp,
-                                'sql' => $val['a']['sql']
+                                'sql' => json_encode( $val['a']['sql'] )
                             ];
                         }
                     }
